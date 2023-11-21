@@ -1,3 +1,4 @@
+commitlint
 cvent
 davejs
 linaria
