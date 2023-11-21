@@ -74,7 +74,7 @@ export const work: Work[] = [
     jobTitle: 'Software Engineer',
     date: [new Date(2019, Month.January), new Date(2021, Month.January)],
     company: {
-      name: 'Manifold (aquired by Snyk)',
+      name: 'Manifold (acquired by Snyk)',
       logo: {
         src: manifoldLogo,
         alt: '',
