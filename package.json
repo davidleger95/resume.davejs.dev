@@ -9,7 +9,7 @@
     "lint": "npm-run-all --parallel --aggregate-output lint:**",
     "lint:ts": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:spelling": "npx cspell lint .",
-    "lint:commits": "npx commitlint --from=HEAD~10",
+    "lint:commits": "npx commitlint --from=HEAD~5",
     "preview": "vite preview",
     "test": "vitest",
     "new:component": "npx generate-react-cli component"
