@@ -20,6 +20,7 @@ module.exports = {
     '.eslintrc.cjs',
     'postcss.config.js',
     'vite.config.ts',
+    'vitest.setup.ts',
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
