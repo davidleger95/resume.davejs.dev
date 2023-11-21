@@ -39,6 +39,7 @@
     "generate-react-cli": "^8.4.0",
     "html-validate": "^8.7.2",
     "jsdom": "^22.1.0",
+    "lefthook": "^1.5.2",
     "pretty": "^2.0.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
