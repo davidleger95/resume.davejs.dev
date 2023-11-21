@@ -7,7 +7,7 @@ import { expect } from 'vitest';
 import pretty from 'pretty';
 
 expect.extend({
-  toRenderValidHTML(received: string, expected?: SourceHooks) {
+  toRenderValidHTML(received: string, expected: SourceHooks) {
     const html = pretty(received, { ocd: false });
 
     const loader = new FileSystemConfigLoader({
