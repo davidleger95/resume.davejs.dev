@@ -1,12 +1,12 @@
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
-import { styled } from "@linaria/react";
-import Header from "./sections/Header/Header";
-import "./App.css";
-import Section from "./components/Section/Section";
-import Prose from "./components/Prose/Prose";
-import Work from "./sections/Work/Work";
-import Education from "./sections/Education/Education";
+import { styled } from '@linaria/react';
+import Header from './sections/Header/Header';
+import './App.css';
+import Section from './components/Section/Section';
+import Prose from './components/Prose/Prose';
+import Work from './sections/Work/Work';
+import Education from './sections/Education/Education';
 
 const Grid = styled.main`
   display: grid;
@@ -26,12 +26,12 @@ const Content = styled.div`
 `;
 
 const skills = [
-  "JavaScript, TypeScript",
-  "React, Next, Gatsby",
-  "GraphQL, Apollo, urql",
-  "Web Components, Stencil.js",
-  "CSS, CSS-in-JS, PostCSS, Sass/SCSS, Less",
-  "HTML",
+  'JavaScript, TypeScript',
+  'React, Next, Gatsby',
+  'GraphQL, Apollo, urql',
+  'Web Components, Stencil.js',
+  'CSS, CSS-in-JS, PostCSS, Sass/SCSS, Less',
+  'HTML',
 ];
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
           <Prose>
             <ul>
               {skills.map((skill) => (
-                <li>{skill}</li>
+                <li key={skill}>{skill}</li>
               ))}
             </ul>
           </Prose>

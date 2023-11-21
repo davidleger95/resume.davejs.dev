@@ -1,27 +1,27 @@
-import snykLogo from "../../assets/snyk-logo.svg";
-import manifoldLogo from "../../assets/manifold-logo.svg";
-import cventLogo from "../../assets/cvent-logo.svg";
-import unbLogo from "../../assets/unb-logo.svg";
-import marinerLogo from "../../assets/mariner-logo.svg";
+import snykLogo from '../../assets/snyk-logo.svg';
+import manifoldLogo from '../../assets/manifold-logo.svg';
+import cventLogo from '../../assets/cvent-logo.svg';
+import unbLogo from '../../assets/unb-logo.svg';
+import marinerLogo from '../../assets/mariner-logo.svg';
 
-interface Image {
+type Image = {
   src: string;
   alt: string;
-}
+};
 
-interface Link {
+type Link = {
   href: string;
   label?: string;
-}
+};
 
-export interface Company {
+export type Company = {
   name: string;
   website?: Link;
-  logo?: Image;
+  logo: Image;
   description?: string;
-}
+};
 
-export interface Work {
+export type Work = {
   slug: string;
   jobTitle: string;
   specialty?: string;
@@ -29,7 +29,7 @@ export interface Work {
   company: Company;
   highlights?: string[];
   description?: string;
-}
+};
 
 enum Month {
   January = 0,
@@ -48,112 +48,112 @@ enum Month {
 
 export const work: Work[] = [
   {
-    slug: "snyk",
-    jobTitle: "Software Engineer",
-    specialty: "Growth",
+    slug: 'snyk',
+    jobTitle: 'Software Engineer',
+    specialty: 'Growth',
     date: [new Date(2021, Month.January), new Date(Date.now())],
     company: {
-      name: "Snyk",
+      name: 'Snyk',
       logo: {
         src: snykLogo,
-        alt: "",
+        alt: '',
       },
       website: {
-        href: "https://snyk.io",
-        label: "snyk.io",
+        href: 'https://snyk.io',
+        label: 'snyk.io',
       },
     },
     highlights: [
-      "Built A/B testing experiments using Amplitude",
-      "Contributed to design system components and documentation",
-      "Shaped feature plans",
+      'Built A/B testing experiments using Amplitude',
+      'Contributed to design system components and documentation',
+      'Shaped feature plans',
     ],
   },
   {
-    slug: "manifold",
-    jobTitle: "Software Engineer",
+    slug: 'manifold',
+    jobTitle: 'Software Engineer',
     date: [new Date(2019, Month.January), new Date(2021, Month.January)],
     company: {
-      name: "Manifold (aquired by Snyk)",
+      name: 'Manifold (aquired by Snyk)',
       logo: {
         src: manifoldLogo,
-        alt: "",
+        alt: '',
       },
     },
     highlights: [
-      "Primary author and maintainer of Manifold UI, a customer-facing Web Components library",
-      "Built high-quality web experiences with a focus on performance and accessibility",
-      "Played a key role in Manifold’s adoption of GraphQL",
-      "Facilitated meetings and refined agile processes to improve my team’s productivity",
+      'Primary author and maintainer of Manifold UI, a customer-facing Web Components library',
+      'Built high-quality web experiences with a focus on performance and accessibility',
+      'Played a key role in Manifold’s adoption of GraphQL',
+      'Facilitated meetings and refined agile processes to improve my team’s productivity',
     ],
   },
   {
-    slug: "cvent",
-    jobTitle: "UI Developer",
+    slug: 'cvent',
+    jobTitle: 'UI Developer',
     date: [new Date(2017, Month.May), new Date(2019, Month.January)],
     company: {
-      name: "Cvent",
+      name: 'Cvent',
       logo: {
         src: cventLogo,
-        alt: "",
+        alt: '',
       },
       website: {
-        href: "https://cvent.com",
-        label: "cvent.com",
+        href: 'https://cvent.com',
+        label: 'cvent.com',
       },
     },
     highlights: [
-      "Built large-scale web applications using React and Redux.",
-      "Worked on a globally distributed team located in Canada, India, USA, and Russia.",
-      "Maintained internal frameworks and libraries used by hundreds of developers.",
-      "Mentored coworkers and regularly lead training sessions.",
+      'Built large-scale web applications using React and Redux.',
+      'Worked on a globally distributed team located in Canada, India, USA, and Russia.',
+      'Maintained internal frameworks and libraries used by hundreds of developers.',
+      'Mentored coworkers and regularly lead training sessions.',
     ],
   },
   {
-    slug: "cvent-internship",
-    jobTitle: "Software Engineering Intern (Internship)",
+    slug: 'cvent-internship',
+    jobTitle: 'Software Engineering Intern (Internship)',
     date: [new Date(2017, Month.May), new Date(2019, Month.January)],
     company: {
-      name: "Cvent",
+      name: 'Cvent',
       logo: {
         src: cventLogo,
-        alt: "",
+        alt: '',
       },
       website: {
-        href: "https://cvent.com",
-        label: "cvent.com",
+        href: 'https://cvent.com',
+        label: 'cvent.com',
       },
     },
   },
   {
-    slug: "unb-internship",
-    jobTitle: "Full-Stack Developer (Internship)",
+    slug: 'unb-internship',
+    jobTitle: 'Full-Stack Developer (Internship)',
     date: [new Date(2017, Month.May), new Date(2019, Month.January)],
     company: {
-      name: "University of New Brunswick",
+      name: 'University of New Brunswick',
       logo: {
         src: unbLogo,
-        alt: "",
+        alt: '',
       },
       website: {
-        href: "https://unb.ca",
-        label: "unb.ca",
+        href: 'https://unb.ca',
+        label: 'unb.ca',
       },
     },
   },
   {
-    slug: "mariner-internship",
-    jobTitle: "Junior Program Analyst (Internship)",
+    slug: 'mariner-internship',
+    jobTitle: 'Junior Program Analyst (Internship)',
     date: [new Date(2017, Month.May), new Date(2019, Month.January)],
     company: {
-      name: "Mariner Innovations",
+      name: 'Mariner Innovations',
       logo: {
         src: marinerLogo,
-        alt: "",
+        alt: '',
       },
       website: {
-        href: "https://marinerinnovations.com",
-        label: "marinerinnovations.com",
+        href: 'https://marinerinnovations.com',
+        label: 'marinerinnovations.com',
       },
     },
   },

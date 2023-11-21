@@ -1,5 +1,5 @@
-import { styled } from "@linaria/react";
-import { AnchorHTMLAttributes } from "react";
+import { styled } from '@linaria/react';
+import { AnchorHTMLAttributes } from 'react';
 
 const StyledLink = styled.a`
   @keyframes blink {
@@ -21,7 +21,7 @@ const StyledLink = styled.a`
     opacity: 0;
     position: absolute;
     line-height: 1.75;
-    content: "_";
+    content: '_';
   }
 
   :hover::before {
@@ -40,7 +40,7 @@ type Props = AnchorHTMLAttributes<HTMLAnchorElement> & {
 
 const Link = ({ children, external, ...rest }: Props) => {
   const externalAttributes = external
-    ? { target: "_blank", rel: "noopener noreferer" }
+    ? { target: '_blank', rel: 'noopener noreferer' }
     : {};
 
   return (

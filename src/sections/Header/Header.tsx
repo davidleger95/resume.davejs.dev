@@ -1,7 +1,7 @@
-import { styled } from "@linaria/react";
-import { Heading } from "../../components/Heading/Heading";
-import Prose from "../../components/Prose/Prose";
-import Chip from "../../components/Chip/Chip";
+import { styled } from '@linaria/react';
+import { Heading } from '../../components/Heading/Heading';
+import Prose from '../../components/Prose/Prose';
+import Chip from '../../components/Chip/Chip';
 
 const BasicInfoList = styled.ul`
   display: flex;

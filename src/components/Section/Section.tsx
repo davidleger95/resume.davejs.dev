@@ -1,6 +1,6 @@
-import { styled } from "@linaria/react";
-import { ReactNode } from "react";
-import { Heading } from "../Heading/Heading";
+import { styled } from '@linaria/react';
+import { ReactNode } from 'react';
+import { Heading } from '../Heading/Heading';
 
 const StyledSection = styled.section`
   display: grid;

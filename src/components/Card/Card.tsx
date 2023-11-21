@@ -1,9 +1,9 @@
-import { ReactNode } from "react";
-import { styled } from "@linaria/react";
-import { Heading } from "../../components/Heading/Heading";
-import { formatDate } from "../../lib/utils/format";
-import Link from "../../components/Link/Link";
-import Prose from "../Prose/Prose";
+import { ReactNode } from 'react';
+import { styled } from '@linaria/react';
+import { Heading } from '../../components/Heading/Heading';
+import { formatDate } from '../../lib/utils/format';
+import Link from '../../components/Link/Link';
+import Prose from '../Prose/Prose';
 
 const Time = (props: { value: Date }) => {
   const formattedValue = formatDate(props.value);
@@ -27,8 +27,8 @@ const Header = styled.header`
   gap: 0 1rem;
   grid-template-columns: 40px 1fr auto;
   grid-template-areas:
-    "logo title date"
-    "logo subtitle site";
+    'logo title date'
+    'logo subtitle site';
   font-style: italic;
 
   h3 {
@@ -92,7 +92,7 @@ const Card = ({
         <div>{subtitle}</div>
         {website && (
           <Website href={website.href} external>
-            {website.label || website.href}
+            {website.label ?? website.href}
           </Website>
         )}
       </Header>
@@ -100,7 +100,7 @@ const Card = ({
         <Prose size="small">
           <ul>
             {highlights.map((item) => (
-              <li>{item}</li>
+              <li key={item?.toString()}>{item}</li>
             ))}
           </ul>
         </Prose>

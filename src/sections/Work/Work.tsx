@@ -1,7 +1,7 @@
-import { styled } from "@linaria/react";
-import { work } from "./content";
-import Section from "../../components/Section/Section";
-import Card from "../../components/Card/Card";
+import { styled } from '@linaria/react';
+import { work } from './content';
+import Section from '../../components/Section/Section';
+import Card from '../../components/Card/Card';
 
 const StyledList = styled.ul`
   list-style: none;
@@ -22,7 +22,7 @@ const WorkSection = () => {
               subtitle={item.company.name}
               website={item.company.website}
               date={item.date}
-              logo={item.company.logo!}
+              logo={item.company.logo}
               highlights={item.highlights}
             />
           </li>

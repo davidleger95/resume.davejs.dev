@@ -1,5 +1,5 @@
-import { css } from "@linaria/core";
-import { ReactNode } from "react";
+import { css } from '@linaria/core';
+import { ReactNode } from 'react';
 
 type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
 

@@ -1,5 +1,5 @@
 export const plugins = {
-  "postcss-nesting": {
+  'postcss-nesting': {
     /* plugin options */
   },
 };
