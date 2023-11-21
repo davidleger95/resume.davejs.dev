@@ -2,7 +2,6 @@
 // import viteLogo from "/vite.svg";
 import { styled } from '@linaria/react';
 import Header from './sections/Header/Header';
-import './App.css';
 import Section from './components/Section/Section';
 import Prose from './components/Prose/Prose';
 import Work from './sections/Work/Work';
