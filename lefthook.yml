@@ -13,6 +13,6 @@ pre-commit:
   commands:
     lint:
       glob: '*.{js,ts,jsx,tsx}'
-      run: npm run lint {staged_files}
+      run: npm run lint:ts
     spellcheck:
-      run: npm run lint:spelling {staged_files}
+      run: npm run lint:spelling
