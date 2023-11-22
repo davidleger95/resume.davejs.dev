@@ -9,7 +9,7 @@
     "lint": "npm-run-all --parallel --aggregate-output lint:**",
     "lint:ts": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:spelling": "npx cspell lint .",
-    "lint:commits": "npx commitlint --from=remotes/origin/main --to=HEAD --verbose",
+    "lint:commits": "npx commitlint --from=\"$(git rev-parse --short origin)\" --to=\"$(git rev-parse --short HEAD)\"",
     "preview": "vite preview",
     "test": "vitest",
     "new:component": "npx generate-react-cli component"
