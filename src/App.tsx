@@ -4,6 +4,7 @@ import Section from './components/Section/Section';
 import Prose from './components/Prose/Prose';
 import Work from './sections/Work/Work';
 import Education from './sections/Education/Education';
+import CventLogo from './assets/cvent-logo.svg?react';
 
 const Grid = styled.main`
   display: grid;
@@ -37,6 +38,7 @@ function App() {
       <Content>
         <Header />
         <Section title="Skills">
+          <CventLogo height="auto" width="3rem" />
           <Prose>
             <ul>
               {skills.map((skill) => (

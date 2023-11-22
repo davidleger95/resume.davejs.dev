@@ -7,4 +7,5 @@ linaria
 marinerinnovations
 noreferer
 snyk
+svgr
 urql
