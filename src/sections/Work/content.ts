@@ -51,7 +51,7 @@ enum Month {
 export const work: Work[] = [
   {
     slug: 'snyk',
-    jobTitle: 'Software Engineer',
+    jobTitle: 'Software Engineer, Growth',
     specialty: 'Growth',
     date: [new Date(2021, Month.January), new Date(Date.now())],
     company: {
@@ -66,17 +66,22 @@ export const work: Work[] = [
       },
     },
     highlights: [
-      'Built A/B testing experiments using Amplitude',
+      'Helped establish growth engineering practices company-wide: A/B testing, data-driven decisions',
+      'Built high-quality web experiences with a focus on performance and accessibility',
       'Contributed to design system components and documentation',
-      'Shaped feature plans',
+      'Interviewed candidates and trained new team members',
     ],
     tags: [
       { label: 'TypeScript', icon: 'typescript-plain' },
       { label: 'Vue', icon: 'vuejs-plain' },
       { label: 'Sass', icon: 'sass-plain' },
+      { label: 'Amplitude' },
+      { label: 'Segment' },
       { label: 'Storybook', icon: 'storybook-plain' },
       { label: 'Go', icon: 'go-original-wordmark' },
       { label: 'Terraform', icon: 'terraform-plain' },
+      { label: 'Testing Library' },
+      { label: 'CircleCI', icon: 'circleci-plain' },
     ],
   },
   {
@@ -92,9 +97,9 @@ export const work: Work[] = [
     },
     highlights: [
       'Primary author and maintainer of Manifold UI, a customer-facing Web Components library',
-      'Built high-quality web experiences with a focus on performance and accessibility',
+      'Improved organizational processes resulting in 11% increase in engineering bandwidth',
       'Played a key role in Manifold’s adoption of GraphQL',
-      'Facilitated meetings and refined agile processes to improve my team’s productivity',
+      'Interviewed candidates and trained new team members',
     ],
     tags: [
       { label: 'TypeScript', icon: 'typescript-plain' },
@@ -103,6 +108,8 @@ export const work: Work[] = [
       { label: 'Storybook', icon: 'storybook-plain' },
       { label: 'Web Components, Stencil.js' },
       { label: 'CSS, styled-components', icon: 'css3-plain' },
+      { label: 'Jest', icon: 'jest-plain' },
+      { label: 'GitHub Actions', icon: 'github-plain' },
     ],
   },
   {
@@ -121,10 +128,9 @@ export const work: Work[] = [
       },
     },
     highlights: [
-      'Built large-scale web applications using React and Redux.',
-      'Worked on a globally distributed team located in Canada, India, USA, and Russia.',
-      'Maintained internal frameworks and libraries used by hundreds of developers.',
-      'Mentored coworkers and regularly lead training sessions.',
+      'Built large-scale web applications using React and Redux, focusing on performance and accessibility',
+      'Maintained internal frameworks and libraries used by hundreds of developers',
+      'Mentored coworkers and regularly lead training sessions on web technologies',
     ],
     tags: [
       { label: 'TypeScript', icon: 'typescript-plain' },

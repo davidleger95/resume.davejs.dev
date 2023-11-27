@@ -6,12 +6,19 @@ const StyledTag = styled.div`
   font-size: 0.8rem;
 `;
 
-export type Props = { label: string; icon?: string };
+const Icon = styled.i`
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 3px;
+`;
 
-const Tag = ({ label, icon }: Props) => {
+export type Props = { label: string; icon?: string; colored?: boolean };
+
+const Tag = ({ label, icon, colored = true }: Props) => {
   return (
     <StyledTag>
-      {icon && <i className={`devicon-${icon}`} />} {label}
+      {icon && <Icon className={`devicon-${icon} ${colored && 'colored'}`} />}{' '}
+      {label}
     </StyledTag>
   );
 };
