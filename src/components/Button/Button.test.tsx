@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import { Button, Props } from '.';
 
 const props: Props = {
-  // test props
+  children: 'Button text',
 };
 
 describe('Button', () => {
