@@ -4,7 +4,8 @@ import { Heading } from '../../components/Heading/Heading';
 import { formatDate } from '../../lib/utils/format';
 import Link from '../../components/Link/Link';
 import Prose from '../Prose/Prose';
-
+import { Props as Tag } from '../Tag';
+import { TagList } from '../TagList';
 const Time = (props: { value: Date }) => {
   const formattedValue = formatDate(props.value);
   const stringValue = props.value.toDateString();
@@ -64,6 +65,7 @@ type Props = {
   };
   date: Date | [Date, Date];
   highlights?: ReactNode[];
+  tags?: Tag[];
   children?: ReactNode;
 };
 
@@ -74,6 +76,7 @@ const Card = ({
   website,
   date,
   highlights,
+  tags,
   children,
 }: Props) => {
   const dateValue = Array.isArray(date) ? (
@@ -106,6 +109,7 @@ const Card = ({
         </Prose>
       )}
       {children}
+      {tags && <TagList items={tags} />}
     </StyledSection>
   );
 };

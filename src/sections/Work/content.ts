@@ -3,6 +3,7 @@ import manifoldLogo from '../../assets/manifold-logo.svg';
 import cventLogo from '../../assets/cvent-logo.svg';
 import unbLogo from '../../assets/unb-logo.svg';
 import marinerLogo from '../../assets/mariner-logo.svg';
+import { Props as Tag } from '../../components/Tag';
 
 type Image = {
   src: string;
@@ -29,6 +30,7 @@ export type Work = {
   company: Company;
   highlights?: string[];
   description?: string;
+  tags?: Tag[];
 };
 
 enum Month {
@@ -68,6 +70,14 @@ export const work: Work[] = [
       'Contributed to design system components and documentation',
       'Shaped feature plans',
     ],
+    tags: [
+      { label: 'TypeScript', icon: 'typescript-plain' },
+      { label: 'Vue', icon: 'vuejs-plain' },
+      { label: 'Sass', icon: 'sass-plain' },
+      { label: 'Storybook', icon: 'storybook-plain' },
+      { label: 'Go', icon: 'go-original-wordmark' },
+      { label: 'Terraform', icon: 'terraform-plain' },
+    ],
   },
   {
     slug: 'manifold',
@@ -85,6 +95,14 @@ export const work: Work[] = [
       'Built high-quality web experiences with a focus on performance and accessibility',
       'Played a key role in Manifold’s adoption of GraphQL',
       'Facilitated meetings and refined agile processes to improve my team’s productivity',
+    ],
+    tags: [
+      { label: 'TypeScript', icon: 'typescript-plain' },
+      { label: 'React', icon: 'react-plain' },
+      { label: 'GraphQL, urql', icon: 'graphql-plain' },
+      { label: 'Storybook', icon: 'storybook-plain' },
+      { label: 'Web Components, Stencil.js' },
+      { label: 'CSS, styled-components', icon: 'css3-plain' },
     ],
   },
   {
@@ -107,6 +125,13 @@ export const work: Work[] = [
       'Worked on a globally distributed team located in Canada, India, USA, and Russia.',
       'Maintained internal frameworks and libraries used by hundreds of developers.',
       'Mentored coworkers and regularly lead training sessions.',
+    ],
+    tags: [
+      { label: 'TypeScript', icon: 'typescript-plain' },
+      { label: 'React', icon: 'react-plain' },
+      { label: 'Redux', icon: 'redux-original' },
+      { label: 'CSS, LESS', icon: 'less-plain-wordmark' },
+      { label: 'Jest', icon: 'jest-plain' },
     ],
   },
   {

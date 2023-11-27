@@ -2,6 +2,7 @@ amannn
 commitlint
 cvent
 davejs
+devicon
 lefthook
 linaria
 marinerinnovations
@@ -9,3 +10,5 @@ noreferer
 snyk
 svgr
 urql
+vuejs
+wordmark
