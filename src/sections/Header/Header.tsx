@@ -35,17 +35,19 @@ const StyledHeader = styled.header`
   gap: 1rem;
 `;
 
+const Lead = styled(Prose)`
+  font-style: italic;
+`;
+
 function Header() {
   return (
     <StyledHeader>
       <Heading level={1}>David Leger</Heading>
       <BasicInfo />
-      <Prose size="large">
-        <i>
-          Front-end engineer with design and product sensibilities. I’m
-          passionate about creating great products that people love.
-        </i>
-      </Prose>
+      <Lead size="large">
+        Software engineer with design and product sensibilities. I’m passionate
+        about creating great products that people love.
+      </Lead>
     </StyledHeader>
   );
 }
