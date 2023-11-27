@@ -21,7 +21,7 @@ const StyledButton = styled.button`
 export type Props = ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = (props: Props) => {
-  return <StyledButton {...props} />;
+  return <StyledButton type="button" {...props} />;
 };
 
 export default Button;

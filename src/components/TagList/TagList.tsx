@@ -1,7 +1,7 @@
 import { styled } from '@linaria/react';
 import { Tag, Props as TagProps } from '../Tag';
 
-const StyledTagList = styled.div`
+const StyledTagList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
