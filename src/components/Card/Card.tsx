@@ -40,9 +40,6 @@ const Header = styled.header`
     font-style: normal;
   }
 
-  @media (max-width: 700px) {
-    font-size: 0.8em;
-  }
   @media (max-width: 500px) {
     grid-template-columns: 2.5em 1fr;
     grid-template-areas:
