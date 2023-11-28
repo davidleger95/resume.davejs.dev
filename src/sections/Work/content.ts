@@ -101,7 +101,7 @@ export const work: Work[] = [
       },
     },
     highlights: [
-      'Primary author and maintainer of Manifold UI, a customer-facing Web Components library',
+      'Core author and maintainer of Manifold UI, a customer-facing Web Components library',
       'Improved organizational processes resulting in 12.5% increase in engineering bandwidth',
       'Played a key role in Manifold’s adoption of GraphQL',
       'Interviewed candidates and trained new team members',
