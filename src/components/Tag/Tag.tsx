@@ -4,23 +4,26 @@ const StyledTag = styled.div`
   background: #ffffff11;
   padding: 0.25em 0.5em;
   font-size: 0.8rem;
-`;
-
-const IconContainer = styled.div`
-  display: inline-grid;
-  grid-template-areas: icon;
-  justify-items: center;
+  display: flex;
+  gap: 0.5em;
   align-items: center;
 `;
 
-const Icon = styled.i`
-  padding: 2px;
-  border-radius: 3px;
-  grid-area: icon;
+const IconContainer = styled.div`
+  display: grid;
+  grid-template-areas: icon;
+  justify-items: center;
+  align-items: center;
+
+  & > i {
+    grid-area: icon;
+    display: block;
+  }
 `;
 
+const Icon = styled.i``;
+
 const IconOutline = styled.i`
-  grid-area: icon;
   paint-order: stroke fill;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: white;
