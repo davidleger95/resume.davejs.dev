@@ -17,7 +17,7 @@ const Grid = styled.main`
 const Content = styled.div`
   grid-area: content;
   display: grid;
-  gap: 3rem;
+  gap: 5rem;
   padding: 5rem 0;
 `;
 

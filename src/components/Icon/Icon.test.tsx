@@ -2,7 +2,7 @@ import { render } from '@testing-library/react';
 import { Icon, Props } from '.';
 
 const props: Props = {
-  // test props
+  icon: 'github-plain',
 };
 
 describe('Icon', () => {
