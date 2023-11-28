@@ -8,6 +8,7 @@ const StyledLink = styled.a<{ size?: 'small' }>`
   font-weight: 600;
   font-style: normal;
   font-size: ${(props) => (props.size === 'small' ? '0.8em' : '1em')};
+
   &:focus {
     outline: 1px solid #fff;
     outline-offset: 2px;
