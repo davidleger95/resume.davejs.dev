@@ -29,7 +29,7 @@ const softSkills: Skill[] = [
   { label: 'Growth engineering' },
   { label: 'Design systems' },
   { label: 'Web accessibility & best practices' },
-  { label: 'Testing methodologies (Unit, E2E, VRT)' },
+  { label: 'Testing methodologies (unit, E2E, VRT)' },
   { label: 'Remote communication' },
 ];
 

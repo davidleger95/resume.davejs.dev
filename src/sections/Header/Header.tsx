@@ -69,11 +69,10 @@ function Header() {
           source
         </Button>
         <Button
-          href="https://github.com/davidleger95/resume.davejs.dev"
+          href="/david-leger-resume.pdf"
           target="_blank"
           rel="noopener noreferer"
         >
-          {/* <Icon icon="github-plain" /> */}
           PDF version
         </Button>
       </CtaGroup>
