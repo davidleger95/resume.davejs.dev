@@ -21,12 +21,16 @@ const Duration = (props: { start: Date; end: Date }) => (
 const StyledSection = styled.section`
   display: grid;
   gap: 1rem;
+
+  @media (max-width: 500px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const Header = styled.header`
   display: grid;
-  gap: 0 1rem;
-  grid-template-columns: 40px 1fr auto;
+  gap: 0 1em;
+  grid-template-columns: 2.5em 1fr auto;
   grid-template-areas:
     'logo title date'
     'logo subtitle site';
@@ -35,22 +39,42 @@ const Header = styled.header`
   h3 {
     font-style: normal;
   }
+
+  @media (max-width: 700px) {
+    font-size: 0.8em;
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: 2.5em 1fr;
+    grid-template-areas:
+      'logo title'
+      'logo subtitle'
+      '_ date'
+      '_ site';
+  }
 `;
 
 const Logo = styled.img`
   justify-self: center;
   align-self: center;
   grid-area: logo;
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 2.5em;
+  max-height: 2.5em;
 `;
 
 const Website = styled(Link)`
-  justify-self: end;
+  grid-area: site;
+
+  @media (min-width: 500px) {
+    text-align: end;
+    justify-self: end;
+  }
 `;
 
 const StyledDate = styled.div`
-  justify-self: end;
+  grid-area: date;
+  @media (min-width: 500px) {
+    text-align: end;
+  }
 `;
 
 type Props = {
@@ -94,7 +118,7 @@ const Card = ({
         <StyledDate>{dateValue}</StyledDate>
         <div>{subtitle}</div>
         {website && (
-          <Website href={website.href} external>
+          <Website href={website.href} external size="small">
             {website.label ?? website.href}
           </Website>
         )}
@@ -109,7 +133,7 @@ const Card = ({
         </Prose>
       )}
       {children}
-      {tags && <TagList items={tags} />}
+      {tags && <TagList items={tags} limit={6} />}
     </StyledSection>
   );
 };
