@@ -6,7 +6,9 @@ devicon
 lefthook
 linaria
 marinerinnovations
+nextjs
 noreferer
+Pinia
 snyk
 svgr
 urql

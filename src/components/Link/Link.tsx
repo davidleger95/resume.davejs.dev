@@ -1,31 +1,16 @@
 import { styled } from '@linaria/react';
 import { AnchorHTMLAttributes } from 'react';
-
-const StyledLink = styled.a`
-  @keyframes blink {
-    0% {
-      opacity: 0;
-    }
-    49% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  ::before {
-    opacity: 0;
-    position: absolute;
-    line-height: 1.75;
-    content: '_';
-  }
-
-  :hover::before {
-    animation: blink 1s linear infinite;
+import ExternalIcon from '../../assets/external-icon.svg?react';
+const StyledLink = styled.a<{ size?: 'small' }>`
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+  font-weight: 600;
+  font-style: normal;
+  font-size: ${(props) => (props.size === 'small' ? '0.8em' : '1em')};
+  &:focus {
+    outline: 1px solid #fff;
+    outline-offset: 2px;
   }
 `;
 
@@ -35,6 +20,7 @@ const Hidden = styled.span`
 `;
 
 type Props = AnchorHTMLAttributes<HTMLAnchorElement> & {
+  size?: 'small';
   external?: boolean;
 };
 
@@ -46,7 +32,11 @@ const Link = ({ children, external, ...rest }: Props) => {
   return (
     <StyledLink {...rest} {...externalAttributes}>
       {children}
-      {external && <Hidden>(open in new tab) </Hidden>}
+      {external && (
+        <>
+          <ExternalIcon /> <Hidden>(open in new tab) </Hidden>
+        </>
+      )}
     </StyledLink>
   );
 };
