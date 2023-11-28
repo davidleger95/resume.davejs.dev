@@ -6,10 +6,24 @@ const StyledTag = styled.div`
   font-size: 0.8rem;
 `;
 
+const IconContainer = styled.div`
+  display: inline-grid;
+  grid-template-areas: icon;
+  justify-items: center;
+  align-items: center;
+`;
+
 const Icon = styled.i`
-  background-color: #fff;
   padding: 2px;
   border-radius: 3px;
+  grid-area: icon;
+`;
+
+const IconOutline = styled.i`
+  grid-area: icon;
+  paint-order: stroke fill;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
 `;
 
 export type Props = { label: string; icon?: string; colored?: boolean };
@@ -17,7 +31,12 @@ export type Props = { label: string; icon?: string; colored?: boolean };
 const Tag = ({ label, icon, colored = true }: Props) => {
   return (
     <StyledTag>
-      {icon && <Icon className={`devicon-${icon} ${colored && 'colored'}`} />}{' '}
+      {icon && (
+        <IconContainer>
+          <IconOutline className={`devicon-${icon}`} />
+          <Icon className={`devicon-${icon} ${colored && 'colored'}`} />
+        </IconContainer>
+      )}{' '}
       {label}
     </StyledTag>
   );
