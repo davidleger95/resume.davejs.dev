@@ -8,7 +8,7 @@ import Link from '../../components/Link/Link';
 
 const BasicInfoList = styled.ul`
   display: flex;
-  gap: 1rem;
+  gap: 0.5em 1em;
   list-style: none;
   margin: 0;
   padding: 0;
