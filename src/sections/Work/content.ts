@@ -67,7 +67,7 @@ export const work: Work[] = [
     },
     highlights: [
       'Helped establish growth engineering practices company-wide: A/B testing, data-driven decisions',
-      'Built high-quality web experiences with a focus on performance and accessibility',
+      'Built high-quality web experiences with a focus on performance and scalability',
       'Contributed to design system components and documentation',
       'Interviewed candidates and trained new team members',
     ],
@@ -136,9 +136,9 @@ export const work: Work[] = [
       },
     },
     highlights: [
-      'Built large-scale web applications using React and Redux, focusing on performance and accessibility',
+      'Built a highly-configurable survey tool with a focus on performance and user experience',
       'Maintained internal frameworks and libraries used by hundreds of developers',
-      'Mentored coworkers and regularly lead training sessions on web technologies',
+      'Mentored coworkers and regularly led training sessions on web technologies',
     ],
     tags: [
       { label: 'JavaScript + Flow', icon: 'javascript-plain' },
