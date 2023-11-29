@@ -19,33 +19,35 @@ const Duration = (props: { start: Date; end: Date }) => (
 );
 
 const StyledSection = styled.section`
+  --_breakpoint: 500px;
   display: grid;
   gap: 1rem;
+  font-size: 0.8rem;
 
-  @media (max-width: 500px) {
-    font-size: 0.8rem;
+  @media (min-width: var(--_breakpoint)) {
+    font-size: 1rem;
   }
 `;
 
 const Header = styled.header`
   display: grid;
   gap: 0 1em;
-  grid-template-columns: 2.5em 1fr auto;
+  grid-template-columns: 2.5em 1fr;
   grid-template-areas:
-    'logo title date'
-    'logo subtitle site';
+    'logo title'
+    'logo subtitle'
+    '_ date'
+    '_ site';
 
   h3 {
     font-style: normal;
   }
 
-  @media (max-width: 500px) {
-    grid-template-columns: 2.5em 1fr;
+  @media (min-width: var(--_breakpoint)) {
+    grid-template-columns: 2.5em 1fr auto;
     grid-template-areas:
-      'logo title'
-      'logo subtitle'
-      '_ date'
-      '_ site';
+      'logo title date'
+      'logo subtitle site';
   }
 `;
 
@@ -60,7 +62,7 @@ const Logo = styled.img`
 const Website = styled(Link)`
   grid-area: site;
 
-  @media (min-width: 500px) {
+  @media (min-width: var(--_breakpoint)) {
     text-align: end;
     justify-self: end;
   }
@@ -68,7 +70,7 @@ const Website = styled(Link)`
 
 const StyledDate = styled.div`
   grid-area: date;
-  @media (min-width: 500px) {
+  @media (min-width: var(--_breakpoint)) {
     text-align: end;
   }
 `;
