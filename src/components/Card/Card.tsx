@@ -34,7 +34,6 @@ const Header = styled.header`
   grid-template-areas:
     'logo title date'
     'logo subtitle site';
-  font-style: italic;
 
   h3 {
     font-style: normal;

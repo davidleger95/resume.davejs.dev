@@ -46,10 +46,6 @@ const StyledHeader = styled.header`
   gap: 1rem;
 `;
 
-const Lead = styled(Prose)`
-  font-style: italic;
-`;
-
 const CtaGroup = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -78,10 +74,10 @@ function Header() {
       </CtaGroup>
       <Heading level={1}>David Leger</Heading>
       <BasicInfo />
-      <Lead size="large">
+      <Prose size="large">
         Software engineer with design and product sensibilities. I’m passionate
         about creating great experiences on the web.
-      </Lead>
+      </Prose>
     </StyledHeader>
   );
 }
