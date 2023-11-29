@@ -1,4 +1,5 @@
 amannn
+bundlesize
 commitlint
 cvent
 davejs
@@ -11,6 +12,7 @@ nextjs
 noreferer
 Pinia
 snyk
+Stylelint
 svgr
 urql
 vuejs
