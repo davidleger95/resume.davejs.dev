@@ -3,6 +3,7 @@ commitlint
 cvent
 davejs
 devicon
+htmlvalidate
 lefthook
 linaria
 marinerinnovations

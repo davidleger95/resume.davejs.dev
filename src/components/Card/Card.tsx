@@ -18,13 +18,14 @@ const Duration = (props: { start: Date; end: Date }) => (
   </>
 );
 
+const BREAKPOINT = 'min-width: 500px';
+
 const StyledSection = styled.section`
-  --_breakpoint: 500px;
   display: grid;
   gap: 1rem;
   font-size: 0.8rem;
 
-  @media (min-width: var(--_breakpoint)) {
+  @media (${BREAKPOINT}) {
     font-size: 1rem;
   }
 `;
@@ -43,7 +44,7 @@ const Header = styled.header`
     font-style: normal;
   }
 
-  @media (min-width: var(--_breakpoint)) {
+  @media (${BREAKPOINT}) {
     grid-template-columns: 2.5em 1fr auto;
     grid-template-areas:
       'logo title date'
@@ -62,7 +63,7 @@ const Logo = styled.img`
 const Website = styled(Link)`
   grid-area: site;
 
-  @media (min-width: var(--_breakpoint)) {
+  @media (${BREAKPOINT}) {
     text-align: end;
     justify-self: end;
   }
@@ -70,17 +71,17 @@ const Website = styled(Link)`
 
 const StyledDate = styled.div`
   grid-area: date;
-  @media (min-width: var(--_breakpoint)) {
+  @media (${BREAKPOINT}) {
     text-align: end;
   }
 `;
 
-type Props = {
+export type Props = {
   logo: {
     src: string;
   };
   title: string;
-  subtitle: string;
+  subtitle: ReactNode;
   website?: {
     href: string;
     label?: string;

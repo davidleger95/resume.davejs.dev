@@ -2,7 +2,11 @@ import { render } from '@testing-library/react';
 import { TagList, Props } from '.';
 
 const props: Props = {
-  items: [{ label: 'One' }, { label: 'Two' }, { label: 'Three' }],
+  items: [
+    { label: 'One', icon: 'github-plain' },
+    { label: 'Two' },
+    { label: 'Three' },
+  ],
 };
 
 describe('TagList', () => {

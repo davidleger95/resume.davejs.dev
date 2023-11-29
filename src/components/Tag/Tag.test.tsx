@@ -3,6 +3,7 @@ import { Tag, Props } from '.';
 
 const props: Props = {
   label: 'Text',
+  icon: 'github-plain',
 };
 
 describe('Tag', () => {
