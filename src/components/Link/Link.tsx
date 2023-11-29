@@ -15,7 +15,7 @@ const Hidden = styled.span`
   top: -100%;
 `;
 
-type Props = AnchorHTMLAttributes<HTMLAnchorElement> & {
+export type Props = AnchorHTMLAttributes<HTMLAnchorElement> & {
   size?: 'small';
   external?: boolean;
 };
@@ -30,7 +30,7 @@ const Link = ({ children, external, ...rest }: Props) => {
       {children}
       {external && (
         <>
-          <ExternalIcon /> <Hidden>(open in new tab) </Hidden>
+          <ExternalIcon /> <Hidden>(open in new tab)</Hidden>
         </>
       )}
     </StyledLink>

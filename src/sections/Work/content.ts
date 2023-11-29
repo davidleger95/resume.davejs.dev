@@ -17,6 +17,7 @@ type Link = {
 
 export type Company = {
   name: string;
+  tag?: string;
   website?: Link;
   logo: Image;
   description?: string;
@@ -94,7 +95,8 @@ export const work: Work[] = [
     jobTitle: 'Software Engineer',
     date: [new Date(2019, Month.January), new Date(2021, Month.January)],
     company: {
-      name: 'Manifold (acquired by Snyk)',
+      name: 'Manifold',
+      tag: 'acquired by Snyk',
       logo: {
         src: manifoldLogo,
         alt: '',
@@ -102,7 +104,7 @@ export const work: Work[] = [
     },
     highlights: [
       'Core author and maintainer of Manifold UI, a customer-facing Web Components library',
-      'Improved organizational processes resulting in 12.5% increase in engineering bandwidth',
+      'Improved organizational processes resulting in a 9% increase in engineering bandwidth',
       'Played a key role in Manifold’s adoption of GraphQL',
       'Interviewed candidates and trained new team members',
     ],
