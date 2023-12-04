@@ -54,7 +54,7 @@ export const work: Work[] = [
     slug: 'snyk',
     jobTitle: 'Software Engineer, Growth',
     specialty: 'Growth',
-    date: [new Date(2021, Month.January), new Date(Date.now())],
+    date: [new Date(2021, Month.January), new Date(Month.November)],
     company: {
       name: 'Snyk',
       logo: {
@@ -153,7 +153,7 @@ export const work: Work[] = [
   {
     slug: 'cvent-internship',
     jobTitle: 'Software Engineering Intern (Internship)',
-    date: [new Date(2017, Month.May), new Date(2019, Month.January)],
+    date: [new Date(2016, Month.May), new Date(2016, Month.August)],
     company: {
       name: 'Cvent',
       logo: {
@@ -176,7 +176,7 @@ export const work: Work[] = [
   {
     slug: 'unb-internship',
     jobTitle: 'Full-Stack Developer (Internship)',
-    date: [new Date(2017, Month.May), new Date(2019, Month.January)],
+    date: [new Date(2015, Month.January), new Date(2015, Month.April)],
     company: {
       name: 'University of New Brunswick',
       logo: {
@@ -198,7 +198,7 @@ export const work: Work[] = [
   {
     slug: 'mariner-internship',
     jobTitle: 'Junior Program Analyst (Internship)',
-    date: [new Date(2017, Month.May), new Date(2019, Month.January)],
+    date: [new Date(2014, Month.May), new Date(2014, Month.August)],
     company: {
       name: 'Mariner Innovations',
       logo: {
