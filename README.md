@@ -1,3 +1,7 @@
+<p align="center">
+  <img height="150px" src="https://raw.githubusercontent.com/davejs-playground/.github/main/davejs-logo.svg"  />
+</p>
+
 # resume.davejs.dev
 
 This is my resume built on Vite + React + TypeScript.
