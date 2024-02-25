@@ -1,3 +1,4 @@
+import kardLogo from '../../assets/kard-logo.svg';
 import snykLogo from '../../assets/snyk-logo.svg';
 import manifoldLogo from '../../assets/manifold-logo.svg';
 import cventLogo from '../../assets/cvent-logo.svg';
@@ -52,9 +53,43 @@ enum Month {
 export const work: Work[] = [
   {
     slug: 'snyk',
+    jobTitle: 'Senior Software Engineer',
+    specialty: 'Growth',
+    date: [new Date(2021, Month.January), new Date(Date.now())],
+    company: {
+      name: 'Kard',
+      logo: {
+        src: kardLogo,
+        alt: '',
+      },
+      website: {
+        href: 'https://getkard.com',
+        label: 'getkard.com',
+      },
+    },
+    highlights: [
+      'Established best practices and tooling for Kard’s frontend stack',
+      'Led efforts to migrate Kard’s codebase to TypeScript and implement visual regression testing (VRT) to improve stability of our platform and code quality',
+      'Maintained Kard’s design system and component library',
+      'Maintained backend APIs built with Serverless and AWS with a MongoDB database',
+    ],
+    tags: [
+      { label: 'TypeScript', icon: 'typescript-plain' },
+      { label: 'Serverless' },
+      { label: 'MongoDB', icon: 'mongodb-plain' },
+      { label: 'Datadog' },
+      { label: 'React', icon: 'react-plain' },
+      { label: 'Storybook', icon: 'storybook-plain' },
+      { label: 'Cypress' },
+      { label: 'Mocha + Sinon' },
+      { label: 'Vite' },
+    ],
+  },
+  {
+    slug: 'snyk',
     jobTitle: 'Software Engineer, Growth',
     specialty: 'Growth',
-    date: [new Date(2021, Month.January), new Date(2023, Month.November)],
+    date: [new Date(2021, Month.January), new Date(2023, Month.December)],
     company: {
       name: 'Snyk',
       logo: {

@@ -4,7 +4,9 @@ commitlint
 cvent
 davejs
 devicon
+getkard.com
 htmlvalidate
+kard
 lefthook
 linaria
 marinerinnovations
