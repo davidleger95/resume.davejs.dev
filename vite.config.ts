@@ -17,7 +17,8 @@ export default defineConfig({
     svgr(),
   ],
   server: {
-    host: 'resume.localtest.me',
+    // host: 'resume.localtest.me',
+    port: 3000,
   },
   test: {
     globals: true,
