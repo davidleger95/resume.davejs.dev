@@ -20,6 +20,10 @@ export default defineConfig({
     // host: 'resume.localtest.me',
     port: 3000,
   },
+  preview: {
+    host: '172.17.0.1',
+    port: 3000,
+  },
   test: {
     globals: true,
     environment: 'jsdom',
