@@ -20,7 +20,7 @@ jobs:
         run: npm run build
 
       - name: Start server (in background)
-        run: npm run preview &
+        run: npm run dev &
 
       - name: Lost Pixel
         uses: lost-pixel/lost-pixel@v3.4.0
