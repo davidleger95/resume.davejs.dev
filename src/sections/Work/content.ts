@@ -55,7 +55,7 @@ export const work: Work[] = [
     slug: 'snyk',
     jobTitle: 'Senior Software Engineer',
     specialty: 'Growth',
-    date: [new Date(2021, Month.January), new Date(Date.now())],
+    date: [new Date(2024, Month.January), new Date(Date.now())],
     company: {
       name: 'Kard',
       logo: {
