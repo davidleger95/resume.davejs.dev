@@ -7,9 +7,15 @@ import Prose from '../Prose/Prose';
 import { Props as Tag } from '../Tag';
 import { TagList } from '../TagList';
 const Time = (props: { value: Date }) => {
+  const currentDate = new Date(Date.now());
+  const isCurrent =
+    props.value.getMonth() === currentDate.getMonth() &&
+    props.value.getFullYear() === currentDate.getFullYear();
   const formattedValue = formatDate(props.value);
   const stringValue = props.value.toDateString();
-  return <time dateTime={stringValue}>{formattedValue}</time>;
+  return (
+    <time dateTime={stringValue}>{isCurrent ? 'Present' : formattedValue}</time>
+  );
 };
 
 const Duration = (props: { start: Date; end: Date }) => (
