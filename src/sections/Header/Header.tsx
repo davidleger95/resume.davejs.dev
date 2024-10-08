@@ -29,12 +29,12 @@ const BasicInfo = () => (
       </Link>
     </Chip>
     <Chip>
-      <Link href="https://davejs.dev" external>
+      <Link href="https://linkedin.com/in/davejs" external>
         👨‍💼 LinkedIn
       </Link>
     </Chip>
     <Chip>
-      <Link href="https://davejs.dev" external>
+      <Link href="https://github.com/davidleger95" external>
         👨‍💻 GitHub
       </Link>
     </Chip>
