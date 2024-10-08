@@ -18,12 +18,12 @@ const skills: Skill[] = [
   { label: 'Web Components' },
 ];
 
-const learning: Skill[] = [
-  { label: 'Kubernetes', icon: 'kubernetes-plain' },
-  { label: 'Terraform', icon: 'terraform-plain' },
-  { label: 'Docker', icon: 'docker-plain' },
-  { label: 'Go', icon: 'go-plain' },
-];
+// const learning: Skill[] = [
+//   { label: 'Kubernetes', icon: 'kubernetes-plain' },
+//   { label: 'Terraform', icon: 'terraform-plain' },
+//   { label: 'Docker', icon: 'docker-plain' },
+//   { label: 'Go', icon: 'go-plain' },
+// ];
 
 const softSkills: Skill[] = [
   { label: 'Growth engineering' },
@@ -43,21 +43,14 @@ function Skills() {
         </Prose>
       </header>
       <TagList items={skills} />
+      
       <header>
         <Heading level={3}>Specialties</Heading>
         <Prose size="small">
           Areas in which I have valuable domain knowledge and experience
         </Prose>
       </header>
-
       <TagList items={softSkills} />
-      <header>
-        <Heading level={3}>Learning</Heading>
-        <Prose size="small">
-          Technologies I&apos;m picking up in my spare time
-        </Prose>
-      </header>
-      <TagList items={learning} />
     </Section>
   );
 }
