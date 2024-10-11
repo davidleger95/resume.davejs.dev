@@ -50,7 +50,7 @@ const WorkSection = () => {
         ))}
         {showAll &&
           otherWork.map((item) => <WorkItem key={item.slug} {...item} />)}
-        <div>
+        <li>
           <Button
             onClick={() => {
               setShowAll(!showAll);
@@ -58,7 +58,7 @@ const WorkSection = () => {
           >
             {showAll ? '- collapse' : '+ show all'}
           </Button>
-        </div>
+        </li>
       </StyledList>
     </Section>
   );

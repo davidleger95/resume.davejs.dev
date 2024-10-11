@@ -1,6 +1,6 @@
 import { styled } from '@linaria/react';
 
-const Chip = styled.div`
+const Chip = styled.li`
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600;
