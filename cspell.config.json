@@ -1,6 +1,6 @@
 {
   "language": "en",
-  "ignorePaths": ["node_modules/**", "*.svg", "*.config.*"],
+  "ignorePaths": ["node_modules/**", "*.svg", "*.config.*", "dist/**"],
   "dictionaries": [
     "companies",
     "softwareTerms",
